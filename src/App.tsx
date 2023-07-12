@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AddingForm from "./components/AddingForm/AddingForm";
+import Container from "./components/UI/Container/Container";
+import TodosLinker from "./components/TodosLinker/TodosLinker";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    return (
+        <section className={'py-16'}>
+            <Container>
+                <div className={'flex flex-col items-center'}>
+                    <AddingForm/>
+                    <TodosLinker/>
+                </div>
+            </Container>
+        </section>
+    )
 }
-
 export default App;
+
